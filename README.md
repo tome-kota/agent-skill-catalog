@@ -1,4 +1,4 @@
-# my-agent-skills
+# agent-skill-catalog
 
 ## このリポジトリについて
 
