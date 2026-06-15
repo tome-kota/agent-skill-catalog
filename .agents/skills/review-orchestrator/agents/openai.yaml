@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Orchestrator"
+  short_description: "Run five focused code review perspectives"
+  default_prompt: "Use $review-orchestrator to review this artifact through all five required perspectives."

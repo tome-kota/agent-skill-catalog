@@ -1,0 +1,146 @@
+[
+  {
+    "query": "ユーザが CSV をアップロードしたら重複チェックして取り込みたい機能を実装して。",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["success criteria", "failure behavior", "data integrity"],
+    "set": "train"
+  },
+  {
+    "query": "管理者が他ユーザになりすまして注文状況を確認できる機能を追加して。",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["authorization", "auditability", "existing impact"],
+    "set": "train"
+  },
+  {
+    "query": "バッチで請求データを外部 API に送る処理を作って。失敗したら後で再送したいかも。",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["failure behavior", "retry", "external contract"],
+    "set": "train"
+  },
+  {
+    "query": "レビューで『例外握りつぶしはやめて』と言われたので直して。",
+    "should_trigger": true,
+    "expected_intensity": "light",
+    "max_questions": 3,
+    "must_touch": ["intent of the comment", "failure behavior"],
+    "set": "train"
+  },
+  {
+    "query": "レビューで service の責務が重いと言われました。最小限で直すべきか、再発しにくい形に寄せるべきか迷っています。",
+    "should_trigger": true,
+    "expected_intensity": "light",
+    "max_questions": 3,
+    "must_touch": ["scope of the comment", "impact radius", "maintainability"],
+    "set": "train"
+  },
+  {
+    "query": "検索 API のレスポンスに新しいフィールドを追加して。既存クライアントは多いです。",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["compatibility", "user impact", "success criteria"],
+    "set": "train"
+  },
+  {
+    "query": "500 が出るバグを直して。今は注文確定時にたまに落ちる。",
+    "should_trigger": true,
+    "expected_intensity": "light",
+    "max_questions": 3,
+    "must_touch": ["definition of fixed", "existing behavior", "failure behavior"],
+    "set": "train"
+  },
+  {
+    "query": "通知ルールを1個追加して。今後似た条件が増えるかもしれない。",
+    "should_trigger": true,
+    "expected_intensity": "light",
+    "max_questions": 3,
+    "must_touch": ["future extensibility", "success criteria"],
+    "set": "validation"
+  },
+  {
+    "query": "社内向け管理画面で一覧の並び順を変えて。操作感は今と大きく変えなくていいです。",
+    "should_trigger": false,
+    "expected_intensity": "skip",
+    "max_questions": 0,
+    "must_touch": [],
+    "set": "validation"
+  },
+  {
+    "query": "typo を直して。ラベルの 'Succes' を 'Success' にしたい。",
+    "should_trigger": false,
+    "expected_intensity": "skip",
+    "max_questions": 0,
+    "must_touch": [],
+    "set": "train"
+  },
+  {
+    "query": "この関数を少し読みやすくして。振る舞いは変えなくていい。",
+    "should_trigger": false,
+    "expected_intensity": "skip",
+    "max_questions": 0,
+    "must_touch": [],
+    "set": "train"
+  },
+  {
+    "query": "まず原因を調べたいです。ジョブが遅いけど、まだ修正方針は決めなくていいです。",
+    "should_trigger": false,
+    "expected_intensity": "skip",
+    "max_questions": 0,
+    "must_touch": [],
+    "set": "validation"
+  },
+  {
+    "query": "Can you add tenant-level audit logs for sensitive setting changes? We need to know who changed what and when.",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["auditability", "authorization", "what must be retained"],
+    "set": "validation"
+  },
+  {
+    "query": "Patch this bug: if payment capture fails, the order sometimes stays half-completed.",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["data integrity", "failure behavior", "recoverability"],
+    "set": "validation"
+  },
+  {
+    "query": "Please apply the review comment and rename these variables only. No behavior changes.",
+    "should_trigger": false,
+    "expected_intensity": "skip",
+    "max_questions": 0,
+    "must_touch": [],
+    "set": "validation"
+  },
+  {
+    "query": "We need to support retrying webhook deliveries, but I do not yet know whether duplicates are acceptable.",
+    "should_trigger": true,
+    "expected_intensity": "heavy",
+    "max_questions": 5,
+    "must_touch": ["retry", "duplicate execution", "external contract"],
+    "set": "validation"
+  },
+  {
+    "query": "UI の空状態メッセージをもう少し分かりやすくしたいです。",
+    "should_trigger": false,
+    "expected_intensity": "skip",
+    "max_questions": 0,
+    "must_touch": [],
+    "set": "train"
+  },
+  {
+    "query": "この設計案、責務分離が怪しいかも。実装前に妥当性を見てほしい。",
+    "should_trigger": true,
+    "expected_intensity": "light",
+    "max_questions": 2,
+    "must_touch": ["decision to shift into design review"],
+    "set": "validation"
+  }
+]

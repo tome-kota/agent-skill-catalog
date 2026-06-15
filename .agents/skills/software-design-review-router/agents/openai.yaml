@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Design Review"
+  short_description: "Review software architecture and design tradeoffs"
+  default_prompt: "Use $software-design-review-router to review this software design and synthesize the most important architectural tradeoffs."

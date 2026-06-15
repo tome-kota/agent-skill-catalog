@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactoring Review Router"
+  short_description: "Route refactoring work to the right diagnostic lens"
+  default_prompt: "Use $refactoring-review-router to pick the right lens for this structural refactoring decision and return a safe plan or first implementation steps."

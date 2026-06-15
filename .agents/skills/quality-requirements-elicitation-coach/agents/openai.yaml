@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quality Requirements Elicitation Coach"
+  short_description: "Elicit missing quality context before implementation"
+  default_prompt: "Use $quality-requirements-elicitation-coach to refine this implementation, bug-fix, or review-feedback request by eliciting missing quality considerations before coding."

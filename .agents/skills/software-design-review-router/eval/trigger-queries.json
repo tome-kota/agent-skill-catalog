@@ -1,0 +1,157 @@
+[
+  {
+    "query": "ADR をレビューして。イベント駆動に寄せたいけど、今のモジュラモノリスのままでも十分な気もしている。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "この境界分割は妥当か見てほしい。注文作成、決済確定、請求書発行を同じ service に置く案で迷ってる。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "注文集約と支払い集約の責務がぶつかっている気がする。aggregate の切り方をレビューして。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "この schema 変更、外部の hidden consumer が怖い。互換性と blast radius の観点で設計レビューして。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "認可モデルの抜けがないか見てほしい。管理者の代理操作と tenant 越境アクセスが少し怪しい。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "my manager wants a quick gut check on this design: we keep adding flags to UserStatus and nobody agrees what 'active' means anymore",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "Can you review whether this proposal is optimizing for the wrong thing? The team is picking Kafka mostly because it feels more scalable, but the main pain today is cross-team ownership confusion.",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "この API 分割、今は作りやすそうだけど将来変更しづらくならないか設計観点で見てほしい。",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "Naming review をお願い。Reservation, Booking, Hold が資料ごとに違う意味で使われていて、業務ルールも曖昧になってる。",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "この改修案、場当たり的な if と feature flag が増えすぎていて次の仕様変更に耐えない気がする。設計レビューして。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "今の回避策をそのまま本実装に昇格させようとしているけど、workaround を固定化していないか見てほしい。",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "AI が出した改修計画が ad hoc に見える。長期的に持つ構造か、YAGNI を外していないかレビューして。",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "将来の拡張を見越して strategy パターンを入れたいけど、まだ1ケースしかない。今やるべきか設計観点で見てほしい。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "AI エージェントが立てた修正計画をレビューして。見た目は筋が良いけど、変更順序と将来の変更耐性が怪しい気がする。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "Can you review this AI-generated refactor plan from a software design perspective? I worry it's introducing too much abstraction for a one-off change.",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "AI が生成したコード変更なんだけど、動いてはいる。ただ service boundary と責務配置が崩れていないか設計レビューしてほしい。",
+    "should_trigger": true,
+    "set": "validation"
+  },
+  {
+    "query": "機能改修の計画を一緒に詰めたい。今の案が将来の仕様変更に耐える構造になっているか見ながら設計したい。",
+    "should_trigger": true,
+    "set": "train"
+  },
+  {
+    "query": "この TypeScript エラーを直して。`Property 'foo' does not exist on type 'Bar'` が出る。",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "Spring Boot の始め方を教えて。REST API を最速で立ち上げたい。",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "lint を直して。prettier と eslint の warning を全部消したい。",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "単発バグ修正です。CSV をアップロードすると 500 が出るので原因を探して直して。",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "Write a Python script that reads rows from a CSV and uploads them to Postgres.",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "この PR を maintainability だけ見てレビューして。命名と関数分割が気になる。",
+    "should_trigger": false,
+    "set": "validation"
+  },
+  {
+    "query": "認可ミドルウェアの実装を追加して。tenant_id を JWT から読んでチェックしたい。",
+    "should_trigger": false,
+    "set": "validation"
+  },
+  {
+    "query": "What's the difference between aggregate roots and entities in DDD? I just want a simple explanation.",
+    "should_trigger": false,
+    "set": "validation"
+  },
+  {
+    "query": "Can you refactor this file for readability? No architecture changes, just cleaner code.",
+    "should_trigger": false,
+    "set": "validation"
+  },
+  {
+    "query": "この関数をもう少し読みやすくして。設計は変えなくていい。",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "テストが落ちているので直して。アーキテクチャの相談ではなく、とりあえずグリーンに戻したい。",
+    "should_trigger": false,
+    "set": "validation"
+  },
+  {
+    "query": "命名だけ少しきれいにしたい。設計変更は不要で、局所的な rename だけお願い。",
+    "should_trigger": false,
+    "set": "validation"
+  },
+  {
+    "query": "AI が出した diff をそのまま当ててほしい。レビューは不要で、とにかく早く適用したい。",
+    "should_trigger": false,
+    "set": "train"
+  },
+  {
+    "query": "このコードを動くように修正して。設計の相談ではなく、まずは失敗しているテストだけ通したい。",
+    "should_trigger": false,
+    "set": "validation"
+  }
+]

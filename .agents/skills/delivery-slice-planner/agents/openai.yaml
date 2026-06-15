@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delivery Slice Planning"
+  short_description: "Convert designs into safe delivery slices"
+  default_prompt: "Use $delivery-slice-planner to convert this design or implementation idea into safe delivery slices, a reviewable PR sequence, a test strategy, deployment order, feature enablement order, and rollback checks."

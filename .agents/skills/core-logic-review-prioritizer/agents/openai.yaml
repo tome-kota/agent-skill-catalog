@@ -1,0 +1,4 @@
+interface:
+  display_name: "Core Logic Design Review Support"
+  short_description: "Focus human review on the design validity of core decision logic"
+  default_prompt: "Use $core-logic-review-prioritizer to first decide whether this change is a good fit for the skill. If it is, identify the business logic, core decision logic, and system-critical control logic that deserve deep human review, then organize the key design concerns, reviewer questions, and next actions in a form that makes review faster. Include permission logic, contract boundaries, state transitions, and system-critical control decisions when relevant. Treat workaround risk and direction of change only as supporting lenses when they materially help."
